@@ -128,34 +128,71 @@ export const MacbookAir = (): JSX.Element => {
         </div>
 
         {/* Hero section */}
-        <div className="absolute w-[1500px] h-[975px] top-0 left-0 bg-black bg-[url(/unsplash-fokquc3ncoy.png)] bg-cover bg-[50%_50%]">
-          <div className="w-[850px] top-[299px] left-[330px] text-white text-[200px] absolute [font-family:'Sarina',Helvetica] font-normal tracking-[0] leading-[normal]">
-            ascnd
-          </div>
+      
+<div className="relative w-full h-[90vh] bg-black bg-[url('/unsplash-fokquc3ncoy.png')] bg-cover bg-center flex flex-col items-center justify-center text-center px-4 sm:px-8">
+  
+  {/* Title */}
+  <h1 className="text-white text-[64px] sm:text-[100px] md:text-[150px] lg:text-[180px] xl:text-[200px] font-[Sarina] font-normal leading-none">
+    ascnd
+  </h1>
 
-          <div className="absolute w-[623px] h-9 top-[913px] left-[497px]">
-            <div className="absolute w-[623px] top-0 left-0 opacity-[0.71] [font-family:'Inter',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal] underline">
-              Our Fabric Technology Explained
-            </div>
+  {/* Fabric Tech Link */}
+  <div className="mt-10 flex items-center gap-4  px-6 py-3 rounded-md cursor-pointer hover:underline">
+    <span className="text-black text-lg sm:text-xl md:text-2xl font-[Inter] font-normal">
+      Our Fabric Technology Explained
+    </span>
+    <span className="text-black text-lg sm:text-xl md:text-2xl rotate-[-45deg] font-[Inter] font-normal">
+      →
+    </span>
+  </div>
+</div>
 
-            <div className="top-0 left-[379px] rotate-[-49.57deg] opacity-[0.71] text-black text-2xl absolute [font-family:'Inter',Helvetica] font-normal tracking-[0] leading-[normal]">
-              →
-            </div>
-          </div>
+<div className="absolute w-[623px] top-[1042px] left-[620px] [font-family:'Inter',Helvetica] font-semibold text-black text-4xl tracking-[0] leading-[normal]">
+          We create elegant and engaging designs for both online and offline
         </div>
+        {/* Category headings */}<div>
+{/* Category Section - Moderately Positioned */}
+<div className="absolute top-[2100px] left-0 w-full px-4 py-10 space-y-10">
+  {/* Side-by-side on md+, stacked reverse on mobile */}
+  <div className="flex flex-col-reverse md:flex-row md:justify-center md:gap-10 items-center">
+    
+    {/* Yoga wear */}
+    <div className="flex flex-col items-center md:w-1/2">
+      <img
+        className="w-full max-w-md h-auto object-cover"
+        alt="Yoga wear"
+        src="/unsplash-u08w8z-ig7q.png"
+      />
+      <p className="mt-4 text-[26px] font-medium text-black font-['Inter']">
+        Yoga wear
+      </p>
+    </div>
 
-        {/* Category headings */}
-        <div className="absolute w-[180px] top-[1832px] left-[646px] [font-family:'Inter',Helvetica] font-medium text-black text-[26px] tracking-[0] leading-[normal]">
-          Yoga wear
-        </div>
+    {/* Cycling T-shirts */}
+    <div className="flex flex-col items-center md:w-1/2">
+      <img
+        className="w-full max-w-md h-auto object-cover"
+        alt="Cycling T-shirts"
+        src="/chatgpt-image-jun-4--2025--03-51-20-pm-1.png"
+      />
+      <p className="mt-4 text-[26px] font-medium text-black font-['Inter']">
+        Cycling T-shirts
+      </p>
+    </div>
+  </div>
 
-        <div className="absolute w-[1002px] top-[2102px] left-[55px] [font-family:'Inter',Helvetica] font-medium text-black text-[26px] tracking-[0] leading-[normal]">
-          Cycling T-shirts
-        </div>
-
-        <div className="absolute w-[1002px] top-[2979px] left-[55px] [font-family:'Inter',Helvetica] font-medium text-black text-[26px] tracking-[0] leading-[normal]">
-          Running wear
-        </div>
+  {/* Running wear */}
+  <div className="flex flex-col items-center">
+    <img
+      className="w-full max-w-6xl h-auto object-cover"
+      alt="Running wear"
+      src="/unsplash-rn78o6ugdke.png"
+    />
+    <p className="mt-4 text-[26px] font-medium text-black font-['Inter']">
+      Running wear
+    </p>
+  </div>
+</div>
 
         {/* Links */}
         <div className="absolute w-[623px] top-[3310px] left-[49px] [font-family:'Inter',Helvetica] font-normal text-black text-2xl tracking-[0] leading-[normal] underline">
@@ -179,21 +216,10 @@ export const MacbookAir = (): JSX.Element => {
         </div>
 
         {/* Content sections */}
-        <div className="absolute w-[623px] top-[1042px] left-[620px] [font-family:'Inter',Helvetica] font-semibold text-black text-4xl tracking-[0] leading-[normal]">
-          We create elegant and engaging designs for both online and offline
-        </div>
+        
+        
 
-        <img
-          className="absolute w-[591px] h-[562px] top-[1254px] left-[637px]"
-          alt="Unsplash"
-          src="/unsplash-u08w8z-ig7q.png"
-        />
-
-        <img
-          className="absolute w-[1179px] h-[777px] top-[2178px] left-[49px] object-cover"
-          alt="Unsplash"
-          src="/unsplash-rn78o6ugdke.png"
-        />
+        
 
         <div className="absolute w-[831px] top-[3179px] left-[49px] [font-family:'Inter',Helvetica] font-semibold text-black text-[44px] tracking-[0] leading-[normal]">
           We create elegant and engaging designs for both online and offline
@@ -210,7 +236,7 @@ export const MacbookAir = (): JSX.Element => {
           alt="Chatgpt image"
           src="/chatgpt-image-may-28--2025--10-38-10-pm-4.png"
         />
-
+</div>
         {/* Coming soon sections */}
         <Card className="absolute w-[538px] h-[745px] top-[5204px] left-[690px] bg-[url(/unsplash-nlpn996yksg.png)] bg-cover bg-[50%_50%] border-0 rounded-none">
           <CardContent className="p-0">
@@ -228,11 +254,7 @@ export const MacbookAir = (): JSX.Element => {
           </CardContent>
         </Card>
 
-        <img
-          className="absolute w-[556px] h-[834px] top-[1254px] left-[49px] object-cover"
-          alt="Chatgpt image"
-          src="/chatgpt-image-jun-4--2025--03-51-20-pm-1.png"
-        />
+       
 
         {/* Footer */}
         <div className="absolute w-[1280px] h-[709px] top-[6692px] left-0">
@@ -279,24 +301,29 @@ export const MacbookAir = (): JSX.Element => {
         </div>
 
         {/* Navigation bar */}
-        <header className="fixed w-[1500px] h-[86px] top-0 left-0 z-50  backdrop-blur-sm">
-         <div className="top-[25px] left-[120px] text-black text-5xl absolute [font-family:'Sarina',Helvetica] font-normal tracking-[0] leading-[normal]">
-  ascnd
-</div>
+        <header className="fixed top-0 left-0 w-full h-20 z-50 backdrop-blur-sm px-4 sm:px-8 md:px-16 flex items-center justify-between">
+      {/* Logo */}
+      <div className="text-black text-3xl sm:text-4xl md:text-5xl font-normal font-[Sarina]">
+        ascnd
+      </div>
 
-<img
-  className="absolute w-[315px] h-[30px] top-[34px] left-[1176px]"
-  alt="Menu"
-  src="/vector.svg"
-/>
+      {/* Right Side - Menu + Bag Button */}
+      <div className="flex items-center space-x-4 sm:space-x-6 md:space-x-8 pr-2 sm:pr-4">
+        {/* Bag Button */}
+        <Button className="bg-black rounded-full px-4 py-2 sm:px-6 sm:py-2 hover:bg-black/90">
+          <span className="font-['Inter'] font-medium text-white text-sm sm:text-base">
+            BAG:0
+          </span>
+        </Button>
 
-<Button className="absolute w-[108px] h-11 top-[29px] left-[981px] bg-black rounded-[38px] hover:bg-black/90">
-  <span className="[font-family:'Inter',Helvetica] font-medium text-white text-[17px] tracking-[0] leading-[normal]">
-    BAG:0
-  </span>
-</Button>
-
-        </header>
+        {/* Menu Icon */}
+        <img
+          className="w-8 h-8 sm:w-10 sm:h-10 md:w-[30px] md:h-[30px]"
+          alt="Menu"
+          src="/vector.svg"
+        />
+      </div>
+    </header>
 
         {/* Help button */}
         <div className="fixed w-[134px] h-[85px] top-[693px] left-[1094px] z-40">
