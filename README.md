@@ -29,3 +29,13 @@ If you are satisfied with the result, you can finally build the project for rele
 ```
 npm run build
 ```
+Install framer
+
+```
+npm install framer-motion
+```
+Required Packages for framer
+
+```
+npm install framer-motion react-intersection-observer
+```
