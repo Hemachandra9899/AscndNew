@@ -29,13 +29,9 @@ If you are satisfied with the result, you can finally build the project for rele
 ```
 npm run build
 ```
-Install framer
+Install Gsap
 
 ```
-npm install framer-motion
+npm install gsap
 ```
-Required Packages for framer
 
-```
-npm install framer-motion react-intersection-observer
-```
