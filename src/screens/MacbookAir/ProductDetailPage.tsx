@@ -4,7 +4,7 @@ import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { Separator } from "../../components/ui/separator";
 import { NavBar } from "../../components/ui/NavBar";
-
+import { Link } from "react-router-dom";
 // Product data
 const productData = {
   name: "Suva Hardshell Pants Wide",
@@ -87,13 +87,15 @@ export const ProductDetailPage = (): JSX.Element => {
           {/* Product Section */}
           <section className="relative w-full">
             {/* Back Button */}
+            <Link to ="/">
             <Button
               variant="outline"
               className="absolute top-8 left-4 md:left-12 bg-black opacity-60 text-white rounded-full"
+
             >
               <ArrowLeftIcon className="mr-1" />
               Back
-            </Button>
+            </Button></Link>
 
             {/* Product Image */}
             <img
