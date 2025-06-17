@@ -61,16 +61,18 @@ export const MensCollectionPage = () => {
 
         {/* Product Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-          {products.map((product) => (
-            <Link to="/product" key={product.id} className="text-center cursor-pointer">
-              <div>
-                <img src={product.image} alt={product.name} className="w-full" />
-                <p className="mt-2 text-sm font-medium">{product.name}</p>
-                <p className="text-sm">{product.price}</p>
-              </div>
-            </Link>
-          ))}
+  {products.map((product) => (
+    <Link to="/product" key={product.id} className="text-center cursor-pointer">
+      <div>
+        <img src={product.image} alt={product.name} className="w-full" />
+        <div className="mt-2 flex justify-between px-2 text-sm font-medium">
+          <p>{product.name}</p>
+          <p>{product.price}</p>
         </div>
+      </div>
+    </Link>
+  ))}
+</div>
 
         {/* Load More Button */}
         <div className="text-center mt-6">
