@@ -3,6 +3,7 @@ import { ArrowLeftIcon } from "lucide-react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { Separator } from "../../components/ui/separator";
+import {NavBar} from "../../components/ui/NavBar";
 
 // Product data
 const productData = {
@@ -93,21 +94,8 @@ export const ProductDetailPage = (): JSX.Element => {
     <div className="bg-white flex flex-col items-center w-full">
       <div className="bg-white w-full max-w-[1280px] relative">
         {/* Header */}
-        <header className="fixed w-full h-[86px] top-0 left-0 bg-white z-50 flex items-center justify-between px-16 shadow">
-          <button className="flex items-center">
-            <img className="w-[46px] h-[30px]" alt="Menu" src="/vector-8.svg" />
-          </button>
-
-          <h1 className="font-['Sarina',Helvetica] font-normal text-black text-5xl">
-            ascnd
-          </h1>
-
-          <Button
-            variant="outline"
-            className="bg-[#00000096] text-white rounded-[38px] h-11 w-[108px]"
-          >
-            BAG:0
-          </Button>
+        <header className="bg-Black" >
+          <NavBar  />
         </header>
 
         {/* Main */}
